@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Bootstrap 양식맛집</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--카카오map-->
+    <script charset="UTF-8" class="daum_roughmap_loader_script"
+        src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+    <!--Google Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="../css/mini1.css" />
+    <script defer src="../js/mini.js"></script>
+</head>
+
+<body id="menu" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#menu">crochet </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#description">description</a></li>
+                    <li><a href="#youtube">youtube</a></li>
+                    <li><a href="#map">Map</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="../image/11.jpg" alt="pasta">
+                <div class="carousel-caption">
+                    <h3>Pasta</h3>
+                    <p>이 집의 단골 메뉴 파스타!</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="../image/12.jpg" alt="pizza">
+                <div class="carousel-caption">
+                    <h3>Pizza</h3>
+                    <p>피자가 빠질 수 없지!~</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="../image/13.jpg" alt="risotto">
+                <div class="carousel-caption">
+                    <h3>risotto</h3>
+                    <p>내가빠지면 섭하지!~</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Container (The Band Section) -->
+    <div id="description" class="container text-center">
+        <h3>경찰병원역 양식맛집</h3>
+        <p><em>crochet!</em></p>
+        <p>오금동에 위치한 이태리전문 맛집 sally's kitchen이다. 크로셰에서는 다양한 파스타와 피자, 리조또를 판매하고있다.</p>
+        <p> 이 집의 인기 메뉴는 해장용 파스타라고 불리는 데 토마토 소스에 스파이시한 맛이 난다고 한다.</p>
+        <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <p class="text-center"><strong>1.세트</strong></p><br>
+                <a href="#demo" data-toggle="collapse">
+                    <img src="../image/14.PNG" class="img-circle person" alt="Random Name" width="255" height="255">
+                </a>
+                <div id="demo" class="collapse">
+                    <p>평일 런치 9900원</p>
+                    <p>주말 런치 11000원</p>
+                    <p>애브리 데이 디너 11900원</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <p class="text-center"><strong>2.커피&음료</strong></p><br>
+                <a href="#demo2" data-toggle="collapse">
+                    <img src="../image/15.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+                </a>
+                <div id="demo2" class="collapse">
+                    <p>핫 아메리카노 2800원</p>
+                    <p>아이스 카페모카 5000원</p>
+                    <p>견과류 빙수 10000원</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <p class="text-center"><strong>3.단일메뉴</strong></p><br>
+                <a href="#demo3" data-toggle="collapse">
+                    <img src="../image/16.PNG" class="img-circle person" alt="Random Name" width="255" height="255">
+                </a>
+                <div id="demo3" class="collapse">
+                    <p>아라비아타/버섯크림</p>
+                    <p>새우그린빈스 리조또</p>
+                    <p>마르게리따/고르곤졸라 피자</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container (TOUR Section) -->
+    <div id="youtube" class="bg-1">
+        <div class="container">
+            <h3 class="text-center">유투브 인증 맛집!</h3>
+            <p class="text-center">안 온사람은 있어도 한번 온 사람은 없다는 맛집!</p>
+            <div class="youtube__area">
+                <div id="player"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div id="map" class="container">
+        <h3 class="text-center">map</h3>
+        <p class="text-center"><em>지도도 한번 확인하세요!</em></p>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <p>가시게요? 여기 정보있어요!</p>
+                <br><br>
+                <p><span class="glyphicon glyphicon-map-marker"></span>서울특별시 송파구 동남로 189 B1</p>
+                <p><span class="glyphicon glyphicon-phone"></span> Phone : 02-2043-2005</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> 음식종류 : 파스타/피자/리조또</p>
+                <p><span class="glyphicon glyphicon-cutlery"></span> 가격대 : 만원 미만</p>
+                <p><span class="glyphicon glyphicon-bed"></span> 주차 : 주차공간없음</p>
+                <p><span class="glyphicon glyphicon-list-alt"></span> 영업시간 : 월-금 : 09:00 ~ 22:00</p>
+                <p><span class="glyphicon glyphicon-hourglass"></span> 마지막주문 : 21:00</p>
+            </div>
+            <div class="col-md-8">
+                <div id="daumRoughmapContainer1631562761307" class="root_daum_roughmap root_daum_roughmap_landing">
+                </div>
+            </div>
+        </div>
+        <br>
+        <h3 class="text-center">From The Blog</h3>
+        <div class="btn_list"><input type="button" id="listButton" value="댓글보기" /></div>
+        <div class="ajax_list">
+
+        </div>
+    </div>
+    <!--PROMOTION-->
+    <div class="promotion">
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../image/17.jpg" />
+
+                </div>
+                <div class="swiper-slide">
+                    <img src="../image/18.jpg" />
+
+                </div>
+                <div class="swiper-slide">
+                    <img src="../image/19.jpg" />
+
+                </div>
+                <div class="swiper-slide">
+                    <img src="../image/20.jpg" />
+
+                </div>
+                <div class="swiper-slide">
+                    <img src="../image/21.jpg" />
+
+                </div>
+                <div class="swiper-slide">
+                    <img src="../image/22.jpg" />
+
+                </div>
+                <div class="swiper-slide">
+                    <img src="../image/23.jpg" />
+
+                </div>
+                <div class="swiper-slide">
+                    <img src="../image/24.jpg" />
+
+                </div>
+                <div class="swiper-slide">
+                    <img src="../image/25.jpg" />
+
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-prev">
+            <span class="material-icons">arrow_back</span>
+        </div>
+        <div class="swiper-next">
+            <span class="material-icons">arrow_forward</span>
+        </div>
+
+    </div>
+    <!-- Footer -->
+    <footer class="text-center">
+        <a class="up-arrow" href="#menu" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a><br><br>
+        <p>Team2 Theme Made By <a href="#menu" data-toggle="tooltip" title="양식맛집">Lee Yong Jun</a></p>
+        <a href="/index.html" class="back">back</a>
+
+    </footer>
+</body>
+
+</html>

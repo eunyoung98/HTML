@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>일식 - 돈기부여 송파점</title>
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet">
+
+
+  <link href="css/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/store7_8.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+    integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>   
+  
+  <script src="./js/store8.js" defer></script>
+</head>
+
+<body>
+  <!-- Responsive navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container px-5">
+      <a class="navbar-brand" href="#!">경찰병원역 맛집 추천</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#!">아이온커뮤니케이션즈 - 2조</a></li>
+          <li class="nav-item"><a class="nav-link goHome" href="/">Home</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="mainArea area1">
+    <img src="./images/don.jpg" alt="">
+    <div class="go">
+      <a href="https://store.naver.com/restaurants/detail?id=1488124397" target='_blank'>
+        가게정보 바로가기<span class="material-icons-outlined">mouse</span></a>
+    </div>
+  </section>
+
+  <section class="mainArea area2">
+    <img src="./images/don2.jpg" alt="">
+    <div>네이버 평은 <span class="score"> 4.47</span>점입니다. <br>리뷰를 보았을 때 가성비 / 맛 / 청결 / 친절 부분의 만족도가 높습니다!</div>
+  </section>
+
+  <section class="mainArea area3 show">
+    <hr>
+    <h2>BEST MENU 1</h2>
+    <div class="best">
+      <div class="image"><img src="./images/don3.jpg" alt=""></div>
+      <div class="text">
+        <p>[치즈폭탄] 치즈롤까스</p>
+        <h5>[</h5> 100% 모짜렐라 치즈를 고기에 돌돌말아 깨끗한 기름에 튀겨낸 치즈폭포 롤까스 <h5>]</h5>
+        <br>가격 - 9500원
+      </div>
+      <div class="good1">메뉴 추천
+        <span class="material-icons-outlined">thumb_up_off_alt</span>
+        <span class="num">236</span>
+      </div>
+    </div>
+    <br><br>
+    <h2>BEST MENU 2</h2>
+    <div class="best">
+      <div class="image"><img src="./images/don4.jpg" alt=""></div>
+      <div class="text">
+        <p>혼밥 (A,B,C)세트</p>
+        <h5>[</h5> 원하는 돈까스 종류와 면류(쫄면, 우동) + 탄산(콜라, 사이다) 으로 든든한 한끼 식사를 책임집니다. <h5>]</h5>
+        <br>가격 - 13500원
+      </div>
+      <div class="good2">메뉴 추천
+        <span class="material-icons-outlined">thumb_up_off_alt</span>
+        <span class="num2">157</span>
+      </div>
+    </div>
+    <hr>
+  </section>
+
+  <section class="video">
+    <p>'돈기부여' 서덕주 대표 인터뷰 영상</p>
+    <iframe src="https://www.youtube.com/embed/-5UYobcIueM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+
+  <section class="mainArea area4">
+    <h3 id="time">영업 시간 확인 <span class="material-icons-outlined">mouse</span></h3>
+    <div id="insert"></div>
+  </section>
+
+
+  <section class="mainArea area5">
+    <h3>지도 & 정보
+      <span class="material-icons-sharp">south</span>
+    </h3>
+    <button
+      onclick="location.href='https://map.naver.com/v5/entry/place/1488124397?c=14150757.3395675,4508483.7012457,15,0,0,0,dh&placePath=%3Fentry=plt' ">click</button>
+  </section>
+
+  <div class="to-top">
+    <div class="material-icons">arrow_upward</div>
+  </div>
+</body>
+
+</html>

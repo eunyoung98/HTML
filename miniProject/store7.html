@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>일식 - 냠냠물고기</title>
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet">
+
+  <link href="css/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/store7_8.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+    integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+    integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>   
+
+  <script src="./js/store7.js" defer></script>
+</head>
+
+<body>
+  <!-- Responsive navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container px-5">
+      <a class="navbar-brand" href="#!">경찰병원역 맛집 추천</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#!">아이온커뮤니케이션즈 - 2조</a></li>
+          <li class="nav-item"><a class="nav-link goHome" href="/">Home</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="mainArea area1">
+    <img src="./images/namnam.jpg" alt="">
+    <div class="go">
+      <a href="https://store.naver.com/restaurants/detail?id=38514809" target='_blank'>
+        가게정보 바로가기<span class="material-icons-outlined">mouse</span></a>
+    </div>
+  </section>
+
+  <section class="mainArea area2">
+    <img src="./images/namnam2.jpg" alt="">
+    <div>네이버 평은 <span class="score"> 4.6</span>점입니다. <br>리뷰를 보았을 때 분위기 / 맛 / 서비스 / 친절 부분의 만족도가 높습니다!</div>
+  </section>
+
+  <section class="hide">
+    <hr>
+    베스트메뉴 확인하기 <span class="material-icons-outlined">mouse</span>
+  </section>
+
+  <section class="mainArea area3">
+    <hr>
+
+    <h2>BEST MENU 1</h2>
+    <div class="best">
+      <div class="image"><img src="./images/namnam3.jpg" alt=""></div>
+      <div class="text">
+        <p>냠냠물고기에서 제일 인기있는 오마카세</p>
+        <h5>[</h5> "남에게 모두 맡긴다"는 뜻의 일본어로, 외식업계에서는 손님이 요리사에게 메뉴선택을 맡기면, 요리사가 그때그때 엄선한 식재료로 제철 요리를 만들어 내는 것을 가리킨다.
+        일본의 스시 식당에서 "세프의 추천 메뉴"라는 뜻으로 사용되기 시작해 현재는 한우, 양식, 커피 등 다양한 외식 분야에서 쓰이고 있다. <h5>]</h5>
+        <br>가격 - 1인 45000원
+      </div>
+    </div>
+    <br><br>
+    <h2>BEST MENU 2</h2>
+    <div class="best">
+      <div class="image"><img src="./images/namnam4.jpg" alt=""></div>
+      <div class="text">
+        <p>한상차림 기본</p>
+        <h5>[</h5> 모듬 사시미 한판 + 구이 + 튀김 + 샤브샤브 구성 <h5>]</h5>
+        <br>가격 - 2~3인 65000원 / 3~4인 85000원
+      </div>
+    </div>
+    <hr>
+  </section>
+
+  <section class="mainArea area4">
+    <h3 id="time">영업 시간 확인 <span class="material-icons-outlined">mouse</span></h3>
+    <div id="insert"></div>
+  </section>
+
+  <section class="mainArea area5">
+    <h3>예약하러 가기
+      <span class="material-icons-sharp">south</span>
+    </h3>
+    <button
+      onclick="location.href='https://map.naver.com/v5/entry/place/38514809?c=14151012.4838404,4508617.3172279,15,0,0,0,dh&placePath=%2Fbooking%3Fentry=plt' ">1호점</button>
+    <br>
+    <button
+      onclick="location.href='https://map.naver.com/v5/entry/place/1778746076?c=14150427.6780275,4508286.4583788,15,0,0,0,dh' ">2호점</button>
+  </section>
+
+  <div class="to-top">
+    <div class="material-icons">arrow_upward</div>
+  </div </body> </html>
